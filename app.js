@@ -25,9 +25,13 @@ function appendGif(data) {
     const $row = $(`#${currRow}`);
 
     // set up GIF element
-    const gif = $('<img>');
-    gif.attr('src', data.url);
-    console.log();
+    const gif = $('<iframe>');
+    gif.attr({
+        'src': data.embed_url,
+        'width': data.images["480w_still"].width,
+        'height': data.images["480w_still"].height,
+    })
+    console.log(data);
 
     // set up cell
     const cell = $('<td>');

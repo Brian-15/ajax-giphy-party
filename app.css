@@ -1,18 +1,29 @@
-table {
-    width: 100%;
-    display: flex;
+body {
+    justify-content: center;
 }
 
-tr {
+h1 {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+
+form, button, input {
+    margin: auto;
+}
+
+table {
     width: 100%;
-    height: 100px;
 }
 
 td {
     width: 33%;
-}
-
-img {
-    width: 100%;
-    height: 100%;
+    position: relative;
+    left: 0;
+    display: inline-block;
 }
