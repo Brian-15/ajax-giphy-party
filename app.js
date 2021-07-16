@@ -35,6 +35,9 @@ function appendGif(data) {
     
     if ($row.children().length === 3) {
         currRow++;
+        const newRow = $('<tr>');
+        newRow.attr('id', currRow);
+        $('table').append(newRow);
     }
 
     $(`#${currRow}`).append(cell);
